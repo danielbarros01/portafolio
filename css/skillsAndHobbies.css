@@ -1,0 +1,40 @@
+#sectionSkills{
+    background-color: aquamarine;
+    margin: auto;
+}
+
+#sectionSkills h3{
+    text-align: center;
+}
+
+.tarjetas{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+    justify-items: center;
+}
+
+.tarjeta{
+    width: 14em;
+    height: 12em;
+    padding: 1em;
+    background-color: white;
+    
+}
+
+.info-tarjeta{
+    height: 100%;
+    margin: 0 1em 1em 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.info-tarjeta img{
+    width: 3em;
+}
+
+.info-tarjeta h4{
+    
+}
