@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="css/sectionPresentation.css">
     <link rel="stylesheet" href="css/sectionSobreMi.css">
     <link rel="stylesheet" href="css/skillsAndHobbies.css">
+    <link rel="stylesheet" href="css/academica.css">
+    <link rel="stylesheet" href="css/experiencia.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -31,14 +35,14 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="">Sobre mi</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Hobbies</a></li>
-                    <li><a href="">Formacion</a></li>
-                    <li><a href="">Proyectos</a></li>
-                    <li class="miCorreo"><a href="">danibelgranocab@hotmail.com</a></li>
+                    <li><a href="#sectionTwo">Sobre mi</a></li>
+                    <li><a href="#seccionSkills">Skills</a></li>
+                    <li><a href="#seccionHobbies">Hobbies</a></li>
+                    <li><a href="#formacion">Formacion</a></li>
+                    <li><a href="#experiencia">Proyectos</a></li>
+                    <li class="miCorreo"><a href="#contacto">danibelgranocab@hotmail.com</a></li>
                 </ul>
-                <a href=""><img src="files/email.svg" alt=""></a>
+                <a href="#contacto"><img src="files/email.svg" alt=""></a>
             </nav>
         </div>
     </header>
@@ -51,16 +55,16 @@
                 del proyecto Oracle One Education en Alura Latam
             </p>
             <ul>
-                <a href="">
+                <a href="https://github.com/danielbarros01" target="_blank">
                     <li>GitHub<img src="files/arrow.svg" alt="arrow-github"> </li>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/danielbarros01" target="_blank">
                     <li>Linkedin<img src="files/arrow.svg" alt="arrow-linkedin"> </li>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/danielbarros_01/" target="_blank">
                     <li>Instagram<img src="files/arrow.svg" alt="arrow-instagram"></li>
                 </a>
-                <a href="">
+                <a href="" target="_blank">
                     <li>Curriculo<img src="files/arrow.svg" alt="arrow-curriculo"></li>
                 </a>
             </ul>
@@ -89,11 +93,11 @@
         </article>
     </section>
 
-    <section id="sectionSkills">
+    <section class="sectionSkiHobb" id="seccionSkills">
         <h3>Skills</h3>
 
         <article class="tarjetas">
-            
+
             <div class="tarjeta">
                 <div class="info-tarjeta">
                     <img src="files/icon-html.svg" alt="">
@@ -137,6 +141,174 @@
             </div>
         </article>
     </section>
+
+    <section class="sectionSkiHobb" id="seccionHobbies">
+        <h3>Hobbies</h3>
+
+        <article class="tarjetas">
+
+            <div class="tarjeta">
+                <div class="info-tarjeta">
+                    <img src="files/icon-cocinar.svg" alt="">
+                    <h4>Cocinar</h4>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="info-tarjeta">
+                    <img src="files/icon-music.svg" alt="">
+                    <h4>Escuchar música</h4>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="info-tarjeta">
+                    <img src="files/icon-game.svg" alt="">
+                    <h4>Video juegos</h4>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="info-tarjeta">
+                    <img src="files/icon-book.svg" alt="">
+                    <h4>Leer</h4>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="info-tarjeta">
+                    <img src="files/icon-gym.svg" alt="">
+                    <h4>Ejercitarme</h4>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="info-tarjeta">
+                    <img src="files/icon-piano.svg" alt="">
+                    <h4>Piano</h4>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <section id="formacion" class="blueLight">
+        <h3>Formación Académica</h3>
+
+        <article class="tarjetas">
+
+            <div class="tarjeta-formacion">
+                <div class="foto-formacion">
+                    <img src="files/Logo-escuelaSecundaria.png" alt="">
+                </div>
+                <div class="info-formacion">
+                    <h4>Técnico profesional en Hardware y Software</h4>
+                    <p>2019 - IPET 260 anexo</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-formacion">
+                <div class="foto-formacion">
+                    <img src="files/one-icon.ico" alt="">
+                </div>
+                <div class="info-formacion">
+                    <h4>Desarrollador FullStack</h4>
+                    <p>2022 - Oracle Next Education</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-formacion">
+                <div class="foto-formacion">
+                    <img src="files/ULP-icon.ico" alt="">
+                </div>
+                <div class="info-formacion">
+                    <h4>Técnico universitario en Desarrollo de Software</h4>
+                    <p>2023 - Universidad de La Punta</p>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <section id="experiencia">
+
+        <h3>Experiencia Profesional</h3>
+
+        <div class="experiencias">
+            <article class="artLeft">
+                <figure>
+                    <img src="files/fotoEncriptador.png" alt="">
+                </figure>
+
+                <aside class="info-experiencia">
+
+                    <h4>Encriptador de Texto</h4>
+                    <p>Challenge Alura encriptador</p>
+
+                    <div class="botones">
+                        <button class="btn1">Repositorio</button>
+                        <button class="btn2">Ver demo</button>
+                    </div>
+
+                </aside>
+
+            </article>
+
+            <article class="artRight">
+                <figure>
+                    <img src="files/fotoAhorcado.png" alt="">
+                </figure>
+
+                <aside class="info-experiencia">
+
+                    <h4>Juego del ahorcado</h4>
+                    <p>Challenge Alura ahorcado</p>
+
+                    <div class="botones">
+                        <button class="btn1">Repositorio</button>
+                        <button class="btn2">Ver demo</button>
+                    </div>
+
+                </aside>
+
+            </article>
+
+        </div>
+    </section>
+
+    <section id="contacto" class="blueLight">
+        <article>
+            <img src="files/contact-telephone.png" alt="">
+            <div class="infoyform">
+                <h4>Contacto</h4>
+                <p>¿Quieres contactarme?</p>
+                <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+
+                <form action="">
+                    <label for="txtNombre">Nombre:</label>
+                    <input type="text" id="txtNombre">
+
+                    <label for="txtEmail">E-mail:</label>
+                    <input type="email" id="txtEmail">
+
+                    <label for="txtAsunto">Asunto:</label>
+                    <input type="text" id="txtAsunto">
+
+                    <label for="txtMensaje">Mensaje:</label>
+                    <textarea id="txtMensaje" cols="30" rows="5"></textarea>
+
+                    <input type="submit" value="Enviar Mensaje" class="btn2">
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>&#169 Desarrollado por Daniel Barros</p>
+            <p>2022</p>
+        </div>
+    </footer>
 </body>
 
 </html>
