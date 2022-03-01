@@ -31,6 +31,11 @@
     font-size: 1.2rem;
 }
 
+.container-nav nav img{
+    width: 3em;
+    display: none;
+}
+
 /*Media queries responsive*/
 @media screen and (max-width:1200px){
     .menu li:nth-child(1n+1):not(.miCorreo){
@@ -55,6 +60,12 @@
     }
     .titulo-logo h1{
         font-size: 1.4rem;
+    }
+    .miCorreo{
+        display: none;
+    }
+    .container-nav nav img{
+        display: initial;
     }
 }
 
