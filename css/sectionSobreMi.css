@@ -1,0 +1,28 @@
+
+
+#sectionTwo article{
+    padding-top: 2%;
+}
+
+#sectionTwo h3{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#sectionTwo p{
+    width: 70%;
+    margin-top: 2%;
+    font-size: 1.2em;
+}
+
+#sectionTwo img{
+    width: 20em;
+    margin-top: 1%;
+}
+
+/*Media queries responsive*/
+@media screen and (max-width:900px ){
+    #sectionTwo p{
+        width: 100%;
+    }
+}

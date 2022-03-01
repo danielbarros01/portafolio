@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+header, section{
+    margin-top: 1vw;
+    padding: 0.5vw 3vw;
+}
+
+.blueLight{
+    background-color: #EAF2FD;
+}
+
