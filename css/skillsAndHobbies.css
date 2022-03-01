@@ -1,12 +1,3 @@
-#sectionSkills{
-    background-color: aquamarine;
-    margin: auto;
-}
-
-#sectionSkills h3{
-    text-align: center;
-}
-
 .tarjetas{
     display: grid;
     gap: 1rem;
@@ -35,6 +26,3 @@
     width: 3em;
 }
 
-.info-tarjeta h4{
-    
-}

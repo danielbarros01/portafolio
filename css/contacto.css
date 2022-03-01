@@ -1,0 +1,63 @@
+#contacto article{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.infoyform{
+    margin: 0 0 1em 1em;
+}
+
+#contacto form{
+    display: flex;
+    flex-direction: column;
+
+}
+#contacto form input, textarea{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    border: none;
+    padding: 0 0.5em 0.5em ;
+    outline: none;
+    resize: none;
+}
+
+#contacto form label:focus{
+    color: blue;
+}
+
+#contacto form label{
+    background-color: #FFF;
+    padding: 0.2em 0.8em;
+}
+
+/*Elementos*/
+#contacto h4{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+#contacto p{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+#contacto img{
+    width: 23em;
+    height: 36em;
+}
+#contacto input[type="submit"]{
+    border: none;
+    font-size: 1.2em;
+    padding: 0.8em 0.5em;
+    cursor: pointer;
+    width: 8em;
+}
+
+/*Media queries responsive*/
+@media screen and (max-width:900px ){
+    #contacto article{
+        display: block;
+    }
+    #contacto img{
+        display: none;
+    }
+}

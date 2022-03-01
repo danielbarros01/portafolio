@@ -1,0 +1,27 @@
+/*Formacion Academica*/
+
+#formacion .tarjetas{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: 2em;
+}
+.tarjeta-formacion{
+    margin-bottom: 2em;
+}
+#formacion .tarjeta-formacion .foto-formacion{
+    background-color: white;
+    width: 24em;
+    height: 12em;
+    text-align: center;
+    padding: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formacion .foto-formacion img{
+    width: 6em;
+}
+
+.info-formacion h4, .info-formacion p{
+    margin-top: 0.4em;
+}
