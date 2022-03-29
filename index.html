@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@100;400&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/e6a1497caa.js" crossorigin="anonymous"></script>
+
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -277,30 +279,52 @@
     </section>
 
     <section id="contacto" class="blueLight">
+
+        <img src="files/contact-telephone.png" alt="">
+
         <article>
-            <img src="files/contact-telephone.png" alt="">
-            <div class="infoyform">
+            <div class="header">
                 <h4>Contacto</h4>
                 <p>¿Quieres contactarme?</p>
                 <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-
-                <form action="">
-                    <label for="txtNombre">Nombre:</label>
-                    <input type="text" id="txtNombre">
-
-                    <label for="txtEmail">E-mail:</label>
-                    <input type="email" id="txtEmail">
-
-                    <label for="txtAsunto">Asunto:</label>
-                    <input type="text" id="txtAsunto">
-
-                    <label for="txtMensaje">Mensaje:</label>
-                    <textarea id="txtMensaje" cols="30" rows="5"></textarea>
-
-                    <input type="submit" value="Enviar Mensaje" class="btn2">
-                </form>
             </div>
-        </article>
+
+        <form id="formulario" target="_blank">
+            <div class="box-input">
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="Nombre">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="box-input">
+                <label for="txtEmail">E-mail:</label>
+                <input type="text" id="txtEmail" name="Email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="box-input">
+                <label for="txtAsunto">Asunto:</label>
+                <input type="text" id="txtAsunto" name="Asunto">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="box-input">
+                <label for="txtMensaje">Mensaje:</label>
+                <textarea id="txtMensaje" cols="30" rows="5" name="Mensaje"></textarea>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <small>Error message</small>
+            </div>
+
+            <button id="btnEnviar" class="btn2" >Enviar Mensaje</button>
+        </form>
+    </article>
     </section>
 
     <footer>
@@ -309,6 +333,8 @@
             <p>2022</p>
         </div>
     </footer>
+
+    <script src="js/form.js"></script>
 </body>
 
 </html>

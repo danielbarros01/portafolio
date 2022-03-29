@@ -1,34 +1,85 @@
-#contacto article{
+#contacto{
+    overflow: hidden;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.header{
+	padding-bottom: 1em;
+}
+
+#formulario{
+    width: 100%;
+}
+
+#contacto{
     display: flex;
-    justify-content: center;
-    padding: 2em;
+    justify-content: space-evenly;
 }
 
-.infoyform{
-    margin: 0 0 1em 1em;
+.box-input{
+    margin-bottom: 10px;
+	padding-bottom: 20px;
+    position: relative;
 }
 
-#contacto form{
-    display: flex;
-    flex-direction: column;
-
+.box-input label{
+   display: inline-block;
+   margin-bottom: 5px;
 }
-#contacto form input, textarea{
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    border: none;
-    padding: 0 0.5em 0.5em ;
-    outline: none;
+
+.box-input input,.box-input textarea {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
     resize: none;
 }
 
-#contacto form label:focus{
-    color: blue;
+.box-input i{
+    visibility: hidden;
+	position: absolute;
+    top: 36px;
+	right: 10px;
 }
 
-#contacto form label{
-    background-color: #FFF;
-    padding: 0.2em 0.8em;
+.box-input small{
+    color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.box-input input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+/*JS*/
+.box-input.success input,  .box-input.success textarea{
+	border-color: #2ecc71;
+}
+
+.box-input.error input , .box-input.error textarea{
+	border-color: #e74c3c;
+}
+
+.box-input.success i.fa-circle-check {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.box-input.error i.fa-triangle-exclamation {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.box-input.error small {
+	visibility: visible;
 }
 
 /*Elementos*/
@@ -36,15 +87,13 @@
     font-size: 2em;
     margin-bottom: 0.5em;
 }
-#contacto p{
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
+
 #contacto img{
-    width: 23em;
-    height: 36em;
+    width: 30%;
 }
-#contacto input[type="submit"]{
+
+/*Boton*/
+#contacto button{
     border: none;
     font-size: 1.2em;
     padding: 0.8em 0.5em;
@@ -52,12 +101,13 @@
     width: 8em;
 }
 
+.emailExitoImg{
+    width: 5em;
+}
+
 /*Media queries responsive*/
-@media screen and (max-width:900px ){
-    #contacto article{
-        display: block;
-    }
-    #contacto img{
+@media screen and (max-width:1000px ){
+    #contacto img:not(.emailExitoImg){
         display: none;
     }
 }
