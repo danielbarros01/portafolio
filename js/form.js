@@ -18,7 +18,7 @@ formulario.addEventListener('submit', e => {
 		form.removeChild(boton);
 
         let confirmacionIcon = document.createElement('img');
-        confirmacionIcon.src = "/files/checkEmail.svg";
+        confirmacionIcon.src = "../files/checkEmail.svg";
         confirmacionIcon.className = 'emailExitoImg';
         confirmacionIcon.style.width='5em';
         form.appendChild(confirmacionIcon); 
